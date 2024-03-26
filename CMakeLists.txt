@@ -24,6 +24,9 @@ if(BUILD_MS_WIN32)
 	add_compile_definitions(TARGET_MS_WIN32 UNICODE)
 	link_directories(BEFORE "vendor/lib")
 	include_directories(BEFORE "vendor/include" "Core/src")
+
+	project(OsProber VERSION 1.0)
+	add_subdirectory(OsProber)
 endif()
 
 if(BUILD_GNU_LINUX)
